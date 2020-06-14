@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    max-width: 1440px;
+    min-width: 375px;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: hsl(243, 87%, 12%);
+}
+@media screen and (min-width: 815px){
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px 80px 80px;
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px 180px 80px;
+}
+.header{
+    padding-right: 20px;
+}
+header > * { 
+    flex: 1;
+}
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 180px 80px 100px 80px;
+    background-image: url("images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section > * { 
+    flex: 1;
+}
+.section{
+    padding-right: 60px;
+}
+article{
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px 100px 80px;
+}
+article > * { 
+    flex: 1;
+    max-width: 500px;
+}
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    padding: 100px 80px 50px 80px;
+}
+input{
+    padding: 15px 120px 15px 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: grey;
+    margin: 25px 10px 0px 0px;
+}
+.input-bottom{
+    padding: 15px 300px 15px 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: grey;
+    margin: 0px 0px 15px 0px;
+}
+h1{
+    font-family: 'Raleway';
+    font-size: 2.2em;
+    line-height: 1.5em;
+    padding: 0px 0px 15px 0px;
+}
+h2{
+    font-family: 'Raleway';
+    font-size: 2.2em;
+    line-height: 1.5em;
+    padding: 0px 0px 15px 0px;
+}
+#small{
+    margin: 15px 0px 45px 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    max-width: 165px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+#illustration1{
+    max-width: 635px;
+}
+#illustration2{
+    max-width: 540px;
+}
+.white-button{
+    font-family: 'Raleway';
+    background-color: white;
+    color: hsl(243, 87%, 12%);
+    font-size: 0.9em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 18px 26px 18px 26px;
+}
+.blue-button{
+    font-family: 'Raleway';
+    font-weight: 700;
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 5px;
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+    border: 1px solid hsl(224, 93%, 58%);
+    cursor: pointer;
+    padding: 15px;
+    width: 200px;
+}
+.comment{
+    background-color: white;
+    max-width: 380px;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    padding: 25px 35px 25px 35px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px hsl(0, 0%, 75%);
+}
+.caption{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+}
+.circle{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url("images/avatar-testimonial.jpg");
+    background-size: contain;
+    margin-right: 10px;
+}
+.white-logo{
+    width: 175px;
+    padding-bottom: 30px;
+}
+.icon{
+    float: left;
+    padding-right: 20px;
+}
+.icon-media{
+    width: 32px;
+    margin: 0px 4px 0px 4px;
+}
+.address{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 3fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "one three seven ten"
+    "two four eight ten"
+    ". five nine ."
+    ". six . .";
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding-top: 50px; 
+}
+.attribution a { 
+    color: white;
+}
+.ten{
+    grid-area: ten;
+}
+}
+@media screen and (max-width: 815px){
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 80px 40px;
+}
+header{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px 90px 40px;
+    text-align: center;
+}
+.header{
+    padding-right: 20px;
+}
+header > * { 
+    flex: 1;
+}
+section{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 40px 100px 40px;
+    background-image: url("images/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section > * { 
+    flex: 1;
+}
+article{
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px 50px 40px;
+    text-align: center;
+}
+article > * { 
+    flex: 1;
+    max-width: 500px;
+}
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    padding: 100px 40px 50px 40px;
+}
+input{
+    padding: 15px 120px 15px 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: grey;
+    margin: 25px 0px 15px 0px;
+}
+.input-bottom{
+    padding: 15px 120px 15px 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: grey;
+    margin: 30px 0px 15px 0px;
+}
+h1{
+    font-family: 'Raleway';
+    font-size: 2em;
+    line-height: 1.5em;
+    padding: 25px 0px 15px 0px;
+}
+h2{
+    font-family: 'Raleway';
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 0px 0px 15px 0px;
+    text-align: center;
+}
+#small{
+    margin: 45px 0px 45px 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    max-width: 165px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+#illustration1{
+    max-width: 360px;
+}
+#illustration2{
+    max-width: 380px;
+    padding-bottom: 80px;
+}
+.white-button{
+    font-family: 'Raleway';
+    background-color: white;
+    color: hsl(243, 87%, 12%);
+    font-size: 0.9em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 18px 10px 18px 10px;
+}
+.blue-button{
+    font-family: 'Raleway';
+    font-weight: 700;
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 5px;
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+    border: 1px solid hsl(224, 93%, 58%);
+    cursor: pointer;
+    padding: 15px;
+    width: 285px;
+}
+.comment{
+    background-color: white;
+    max-width: 380px;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    padding: 25px 35px 25px 35px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px hsl(0, 0%, 75%);
+}
+.caption{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+}
+.circle{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url("images/avatar-testimonial.jpg");
+    background-size: contain;
+    margin-right: 10px;
+}
+.logo{
+    max-width: 100px;
+}
+.white-logo{
+    width: 175px;
+    padding-bottom: 30px;
+}
+.icon{
+    float: left;
+    padding-right: 20px;
+}
+.icon-media{
+    width: 32px;
+    margin: 0px 4px 0px 4px;
+}
+.address{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight"
+    "nine"
+    "ten";
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding-top: 50px; 
+}
+.attribution a { 
+    color: white;
+}
+.ten{
+    grid-area: ten;
+    text-align: center;
+}
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
